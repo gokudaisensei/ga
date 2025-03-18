@@ -40,7 +40,7 @@ def student_group_db_to_dc(db_obj: StudentGroupORM) -> StudentGroupDC:
     Convert a SQLAlchemy StudentGroup (ORM) instance to a dataclass StudentGroup.
     """
     return StudentGroupDC(
-        group_id=db_obj.group_id, name=db_obj.name, home_room=db_obj.home_room
+        group_id=db_obj.group_id, name=db_obj.name
     )
 
 

@@ -91,7 +91,7 @@ class DataGenerator:
                 room_id=i + 1,
                 name=f"Room {DataGenerator.fake.word().capitalize()} {i + 1}",
                 capacity=random.randint(30, 80),
-                room_type=random.choice(["classroom", "lab", "lecture hall"]),
+                room_type=random.choice(["classroom", "lab", "lecture_hall"]),
                 status="active",
             )
             for i in range(num_rooms)
